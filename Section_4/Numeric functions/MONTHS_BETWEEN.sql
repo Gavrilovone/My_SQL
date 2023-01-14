@@ -1,5 +1,5 @@
-/*MONTHS_BETWEEN(start_date, end_date) - функция считает количество месяцев
-  между start_date и end_date, где start_date - это "c",  end_date - это "по"
+/*MONTHS_BETWEEN(start_date, end_date) - С„СѓРЅРєС†РёСЏ СЃС‡РёС‚Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРµСЃСЏС†РµРІ
+  РјРµР¶РґСѓ start_date Рё end_date, РіРґРµ start_date - СЌС‚Рѕ "c",  end_date - СЌС‚Рѕ "РїРѕ"
 */
 select employee_id, MONTHS_BETWEEN(end_date, start_date) from job_history;
 select MONTHS_BETWEEN('24.03.1988', '14.01.2023') from dual;

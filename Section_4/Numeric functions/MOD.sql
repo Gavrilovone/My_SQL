@@ -1,15 +1,15 @@
-/*Функция MOD(dividend, divisor) - остаток от деления
-  где dividend - это делимое
-      precision - это делитель
+/*Р¤СѓРЅРєС†РёСЏ MOD(dividend, divisor) - РѕСЃС‚Р°С‚РѕРє РѕС‚ РґРµР»РµРЅРёСЏ
+  РіРґРµ dividend - СЌС‚Рѕ РґРµР»РёРјРѕРµ
+      precision - СЌС‚Рѕ РґРµР»РёС‚РµР»СЊ
 */
 
-select MOD(7,3) from dual; /*Output: 1, так как в семерке две тройки, остается 1*/
-select MOD(3,7) from dual; /*Output: 3, 3 не делится нацело на 7
+select MOD(7,3) from dual; /*Output: 1, С‚Р°Рє РєР°Рє РІ СЃРµРјРµСЂРєРµ РґРІРµ С‚СЂРѕР№РєРё, РѕСЃС‚Р°РµС‚СЃСЏ 1*/
+select MOD(3,7) from dual; /*Output: 3, 3 РЅРµ РґРµР»РёС‚СЃСЏ РЅР°С†РµР»Рѕ РЅР° 7
 
-/*выведем информацию о работниках у которых employee_id четный*/
+/*РІС‹РІРµРґРµРј РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЂР°Р±РѕС‚РЅРёРєР°С… Сѓ РєРѕС‚РѕСЂС‹С… employee_id С‡РµС‚РЅС‹Р№*/
 select * from employees where MOD(employee_id, 2) = 0;
 
-/*Разобъем работников на три команды*/
+/*Р Р°Р·РѕР±СЉРµРј СЂР°Р±РѕС‚РЅРёРєРѕРІ РЅР° С‚СЂРё РєРѕРјР°РЅРґС‹*/
 select employee_id, first_name, last_name, MOD(employee_id, 3)+1 Team
 from employees ;
 
