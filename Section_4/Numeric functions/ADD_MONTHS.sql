@@ -1,6 +1,6 @@
-/*ADD_MONTHS(date, number_of_months) - добавление месяцев
- где date - это дата  
-     number_of_months - количество месяцев
+/*ADD_MONTHS(date, number_of_months) - РґРѕР±Р°РІР»РµРЅРёРµ РјРµСЃСЏС†РµРІ
+ РіРґРµ date - СЌС‚Рѕ РґР°С‚Р°  
+     number_of_months - РєРѕР»РёС‡РµСЃС‚РІРѕ РјРµСЃСЏС†РµРІ
 */
 select end_date, ADD_MONTHS(end_date, 4) from job_history;
 /*24.07.06	24.11.06
