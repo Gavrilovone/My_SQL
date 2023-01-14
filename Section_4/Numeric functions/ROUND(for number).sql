@@ -21,4 +21,4 @@ select ROUND((SYSDATE-hire_date)*employee_id) bonus from employees;
 /*output: 714210
           637826
           818765
- bonus - это alias         
+ bonus - это alias          

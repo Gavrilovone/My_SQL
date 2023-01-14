@@ -1,5 +1,5 @@
 /*ADD_MONTHS(date, number_of_months) - добавление мес€цев
- где date - это дата 
+ где date - это дата  
      number_of_months - количество мес€цев
 */
 select end_date, ADD_MONTHS(end_date, 4) from job_history;

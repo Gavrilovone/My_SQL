@@ -15,7 +15,7 @@ from employees ;
 
 /*employee_id  first_name         last_name      team
   100	       Steven	           King	          2
-  101	       Neena	           Kochhar	      3
-  102	       Lex	De             Haan	          1
-  103	       Alexander	       Hunold	      2
-  104	       Bruce	           Ernst	      3       */
+  101	       Neena	           Kochhar	  3
+  102	       Lex	De             Haan	  1
+  103	       Alexander	       Hunold	  2
+  104	       Bruce	           Ernst	  3       */

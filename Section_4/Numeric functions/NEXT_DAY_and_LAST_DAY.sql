@@ -8,4 +8,4 @@
       LAST_DAY(date) - показывает последний день месяца
 */
 
-select LAST_DAY('12.04.23') from dual; /* Output: 30.04.23
+select LAST_DAY('12.04.23') from dual; /* Output: 30.04.23 
