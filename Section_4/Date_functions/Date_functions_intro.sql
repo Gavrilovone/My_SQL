@@ -1,2 +1,2 @@
 select * from nls_session_parameters where parameter ='NLS_DATE_FORMAT';
-/*Output: NLS_DATE_FORMAT	DD.MM.RR   -  показывает дефолтный формат даты*/
+/*Output: NLS_DATE_FORMAT	DD.MM.RR   -  РїРѕРєР°Р·С‹РІР°РµС‚ РґРµС„РѕР»С‚РЅС‹Р№ С„РѕСЂРјР°С‚ РґР°С‚С‹*/

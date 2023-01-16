@@ -1,14 +1,14 @@
-/*Приоритет AND больше чем у OR*/
+/*РџСЂРёРѕСЂРёС‚РµС‚ AND Р±РѕР»СЊС€Рµ С‡РµРј Сѓ OR*/
 select * from employees;
 select * from employees where first_name like '__n%' AND commission_pct is null;
-/*2 underscore подряд "__" специальый символ, который означает один знак
-тоесть "n" третья, нужно найти все имена у которых 3 буква "n"*/
+/*2 underscore РїРѕРґСЂСЏРґ "__" СЃРїРµС†РёР°Р»СЊС‹Р№ СЃРёРјРІРѕР», РєРѕС‚РѕСЂС‹Р№ РѕР·РЅР°С‡Р°РµС‚ РѕРґРёРЅ Р·РЅР°Рє
+С‚РѕРµСЃС‚СЊ "n" С‚СЂРµС‚СЊСЏ, РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё РІСЃРµ РёРјРµРЅР° Сѓ РєРѕС‚РѕСЂС‹С… 3 Р±СѓРєРІР° "n"*/
 
 select * from employees where first_name like 'A%' AND job_id = 'SA_REP';
-/*вывести тех у кого имя начинается с "A"*/
+/*РІС‹РІРµСЃС‚Рё С‚РµС… Сѓ РєРѕРіРѕ РёРјСЏ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃ "A"*/
 
 select * from employees 
 where first_name like '__n%' AND commission_pct is null
 OR
 first_name like 'A%' AND job_id = 'SA_REP';
-/*Сначала работают 2 AND и только потом OR*/
+/*РЎРЅР°С‡Р°Р»Р° СЂР°Р±РѕС‚Р°СЋС‚ 2 AND Рё С‚РѕР»СЊРєРѕ РїРѕС‚РѕРј OR*/

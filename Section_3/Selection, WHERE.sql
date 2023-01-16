@@ -1,4 +1,4 @@
-/*Selection - выбор строк из таблиц*/
+/*Selection - РІС‹Р±РѕСЂ СЃС‚СЂРѕРє РёР· С‚Р°Р±Р»РёС†*/
 
 select * from employees;
 
@@ -8,12 +8,12 @@ select first_name, last_name, salary from employees where last_name = 'King';
 
 select email from employees where hire_date = '21.09.05';
 
-/*нельзя например написать first_name = salary , так как сравниваемые выражения
-доджны быть одного типа */
+/*РЅРµР»СЊР·СЏ РЅР°РїСЂРёРјРµСЂ РЅР°РїРёСЃР°С‚СЊ first_name = salary , С‚Р°Рє РєР°Рє СЃСЂР°РІРЅРёРІР°РµРјС‹Рµ РІС‹СЂР°Р¶РµРЅРёСЏ
+РґРѕРґР¶РЅС‹ Р±С‹С‚СЊ РѕРґРЅРѕРіРѕ С‚РёРїР° */
 
 select * from employees where employee_id = manager_id+1000/10+1;
 
-select * from job_history where job_id = 'ST_CLERK'; /*значение имеет и регистр, должно быть точное совпадение*/
+select * from job_history where job_id = 'ST_CLERK'; /*Р·РЅР°С‡РµРЅРёРµ РёРјРµРµС‚ Рё СЂРµРіРёСЃС‚СЂ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‚РѕС‡РЅРѕРµ СЃРѕРІРїР°РґРµРЅРёРµ*/
 
 select * from employees
 where 'Dr ' ||first_name||' '||last_name = 'Dr Steven King';

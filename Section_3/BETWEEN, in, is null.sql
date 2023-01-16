@@ -1,23 +1,23 @@
 select first_name, last_name from employees
 where salary BETWEEN 4000 and 10000;
 
-/*Ìîæíî èñïîëüçîâàòü è êîëîíêè*/
+/*ĞœĞ¾Ğ¶Ğ½Ğ¾ Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ÑŒ Ğ¸ ĞºĞ¾Ğ»Ğ¾Ğ½ĞºĞ¸*/
 select first_name, last_name from employees
 where salary BETWEEN employee_id+100 and 10000;
 
 select * from job_history WHERE start_date BETWEEN '01.01.2004' and '31.12.2006';
 select * from job_history WHERE start_date>= '01.01.2004' and start_date<='31.12.2006';
-/*Ğåçóëüòàò áóäåò òàêîé æå*/
+/*Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚ Ğ±ÑƒĞ´ĞµÑ‚ Ñ‚Ğ°ĞºĞ¾Ğ¹ Ğ¶Ğµ*/
 select * from departments WHERE location_id IN (1700, 2400, 1500);
 select * from departments WHERE location_id= 1700 OR location_id=2400 OR location_id=1500 ;
-/*Ğåçóëüòàò áóäåò òàêîé æå*/
+/*Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚ Ğ±ÑƒĞ´ĞµÑ‚ Ñ‚Ğ°ĞºĞ¾Ğ¹ Ğ¶Ğµ*/
 
 select * from job_history WHERE job_id IN ('IT_PROG', 'ST_CLERK');
 
-/*Íè BETWEEN, íè IN íå äîáàâëÿşò êàêîé-òî íîâîé ôóíêöèîíàëüíîñòè, ïğîñòî ñ
-  íèìè áîëåå ëîêàíè÷íî è ıëåãàíòíî
+/*ĞĞ¸ BETWEEN, Ğ½Ğ¸ IN Ğ½Ğµ Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ»ÑÑÑ‚ ĞºĞ°ĞºĞ¾Ğ¹-Ñ‚Ğ¾ Ğ½Ğ¾Ğ²Ğ¾Ğ¹ Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¾Ğ½Ğ°Ğ»ÑŒĞ½Ğ¾ÑÑ‚Ğ¸, Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¾ Ñ
+  Ğ½Ğ¸Ğ¼Ğ¸ Ğ±Ğ¾Ğ»ĞµĞµ Ğ»Ğ¾ĞºĞ°Ğ½Ğ¸Ñ‡Ğ½Ğ¾ Ğ¸ ÑĞ»ĞµĞ³Ğ°Ğ½Ñ‚Ğ½Ğ¾
   
-  /*IS NULL -ıòî îïåğàòîğ êîòîğûé ïğîâåğÿåò íà null*/
+  /*IS NULL -ÑÑ‚Ğ¾ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ‚Ğ¾Ñ€ ĞºĞ¾Ñ‚Ğ¾Ñ€Ñ‹Ğ¹ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑĞµÑ‚ Ğ½Ğ° null*/
   
   select * from employees where commission_pct IS NULL;
   select * from employees where commission_pct IS NOT NULL;
